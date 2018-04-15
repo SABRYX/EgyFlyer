@@ -1,4 +1,8 @@
 import { StackNavigator } from 'react-navigation'
+import SearchOffersScreen from '../Containers/SearchOffersScreen'
+import SearchFlyersScreen from '../Containers/SearchFlyersScreen'
+import SearchRetailersScreen from '../Containers/SearchRetailersScreen'
+import SearchCategoriesScreen from '../Containers/SearchCategoriesScreen'
 import FilterScreen from '../Containers/FilterScreen'
 import SearchScreen from '../Containers/SearchScreen'
 import OfferDetailsScreen from '../Containers/OfferDetailsScreen'
@@ -17,6 +21,10 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  SearchOffersScreen: { screen: SearchOffersScreen },
+  SearchFlyersScreen: { screen: SearchFlyersScreen },
+  SearchRetailersScreen: { screen: SearchRetailersScreen },
+  SearchCategoriesScreen: { screen: SearchCategoriesScreen },
   FilterScreen: { screen: FilterScreen },
   SearchScreen: { screen: SearchScreen },
   OfferDetailsScreen: { screen: OfferDetailsScreen },

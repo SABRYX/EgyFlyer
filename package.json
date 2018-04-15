@@ -33,6 +33,7 @@
     "react-native-config": "^0.10.0",
     "react-native-fontawesome": "^5.7.0",
     "react-native-i18n": "1.0.0",
+    "react-native-keyboard-aware-view": "^0.0.14",
     "react-native-linear-gradient": "^2.4.0",
     "react-native-masonry": "^0.4.6",
     "react-native-modal-overlay": "^1.2.3",

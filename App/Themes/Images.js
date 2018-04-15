@@ -1,7 +1,7 @@
 // leave off @2x/@3x
 const images = {
-  clearLogo: require('../Images/top_logo.png'),
-  launch: require('../Images/launch-icon.png'),
+  clearLogo: require('../Images/logo.png'),
+  launch: require('../Images/icon-square.png'),
   ready: require('../Images/your-app.png'),
   ignite: require('../Images/ignite_logo.png'),
   igniteClear: require('../Images/ignite-logo-transparent.png'),
@@ -20,7 +20,12 @@ const images = {
   backButton: require('../Images/Icons/back-button.png'),
   closeButton: require('../Images/Icons/close-button.png'),
   BG:require('../Images/bg.png'),
-  logo:require('../Images/logo.png')
+  logo:require('../Images/logo.png'),
+  searchCategories:require("../Images/android/drawable-hdpi/search_categories.png"),
+  search_flyer:require("../Images/android/drawable-hdpi/search_flyer.png"),
+  search_offer:require("../Images/android/drawable-hdpi/search_offer.png"),
+  search_store:require("../Images/android/drawable-hdpi/search_store.png")
+
 }
 
 export default images

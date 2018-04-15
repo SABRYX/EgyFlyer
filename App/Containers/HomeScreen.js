@@ -16,9 +16,6 @@ import RESPONSE from "../Containers/response"
 export default class HomeScreen extends Component {
 
   render () {
-    const addOnPress = (item) => {
-      item.onPress = () => this.props.navigate(item.page)
-     };
     return (
       <Container>
       <HeaderWithSearch/>
@@ -66,10 +63,8 @@ export default class HomeScreen extends Component {
          </View>
         </View>)}
       
-      })})}
-          />
+      })})}/>
 
-        <View style={{height:"30%"}}></View>
         </Content>
         <TabsFooter/>
     </Container>
