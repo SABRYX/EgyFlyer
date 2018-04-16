@@ -4,13 +4,13 @@ const { width, height } = Dimensions.get('window')
 
 // Used via Metrics.baseMargin
 const metrics = {
-  marginHorizontal: 10,
-  marginVertical: 10,
+  marginHorizontal: 5,
+  marginVertical: 2,
   section: 25,
-  baseMargin: 10,
+  baseMargin: 7,
   doubleBaseMargin: 20,
-  smallMargin: 5,
-  doubleSection: 50,
+  smallMargin: 2,
+  doubleSection: 200,
   horizontalLineHeight: 1,
   screenWidth: width < height ? width : height,
   screenHeight: width < height ? height : width,

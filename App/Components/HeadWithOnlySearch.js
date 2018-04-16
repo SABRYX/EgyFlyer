@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 // import PropTypes from 'prop-types';
 import { View, Text,ImageBackground } from 'react-native'
-import styles from './Styles/HeaderWithSearchStyle'
+import styles from './Styles/HeadWithOnlySearchStyle'
 import {Header,Body,Left,Right,Icon,Button,Title} from "native-base"
 import { Images } from '../Themes'
 import SearchButton from "../Components/SearchButton"
-import FilterButton from "../Components/FilterButton"
 
 
-export default class HeaderWithSearch extends Component {
+export default class HeadWithOnlySearch extends Component {
   // // Prop type warnings
   // static propTypes = {
   //   someProperty: PropTypes.object,
@@ -38,7 +37,6 @@ export default class HeaderWithSearch extends Component {
           <Title>{this.props.title}</Title>
         </Body>
         <Right style={{flex: 1}}>
-          <FilterButton/>
           <SearchButton/>
         </Right>
       </Header>
@@ -47,3 +45,4 @@ export default class HeaderWithSearch extends Component {
     )
   }
 }
+

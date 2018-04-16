@@ -18,7 +18,7 @@ export default class HomeScreen extends Component {
   render () {
     return (
       <Container>
-      <HeaderWithSearch/>
+      <HeaderWithSearch title="HOME"/>
       <Content style={{marginTop:"0%",backgroundColor:"#efefef"}} >
 
       <View style={{backgroundColor:"#fafafa",width:"100%",flexDirection:"row"}} >

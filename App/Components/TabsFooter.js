@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import styles from './Styles/TabsFooterStyle'
 import {Footer,FooterTab,Icon,Button} from "native-base" 
-export default class TabsFooter extends Component {
+import {withNavigation} from "react-navigation"
+
+class TabsFooter extends Component {
   // // Prop type warnings
   // static propTypes = {
   //   someProperty: PropTypes.object,
@@ -20,19 +22,19 @@ export default class TabsFooter extends Component {
       <View style={{height:"10%"}}>
       <Footer style={{backgroundColor:"white",elevation:0,flex:1}}>
       <FooterTab  style={{backgroundColor:"white"}}>
-        <Button vertical >
+        <Button vertical  onPress={()=>this.props.navigation.navigate("HomeScreen")}>
           <Icon name="barcode" style={{color:"orange"}} type="FontAwesome"/>
           <Text style={{color:"#f05467",fontSize:10}}>Trending</Text>
         </Button>
-        <Button vertical>
+        <Button vertical onPress={()=>this.props.navigation.navigate("RetailersScreen")}>
           <Icon name="home"  style={{color:"black"}} type="Ionicons"/>
           <Text style={{color:"black",fontSize:10}}>Retailers</Text>
         </Button>
-        <Button vertical >
+        <Button vertical onPress={()=>this.props.navigation.navigate("CategoriesScreen")}>
           <Icon active name="th-large" style={{color:"black"}} type="FontAwesome" />
           <Text style={{color:"black",fontSize:10}}>categories</Text>
         </Button>
-        <Button vertical>
+        <Button vertical onPress={()=>this.props.navigation.navigate("MoreScreen")}>
           <Icon name="ellipsis-h" style={{color:"black"}} type="FontAwesome" />
           <Text style={{color:"black",fontSize:10}}>more</Text>
         </Button>
@@ -43,3 +45,5 @@ export default class TabsFooter extends Component {
     )
   }
 }
+
+export default withNavigation(TabsFooter) 
