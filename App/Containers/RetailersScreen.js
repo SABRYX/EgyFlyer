@@ -27,7 +27,7 @@ class RetailersScreen extends Component {
               <Icon name='angle-down' type="FontAwesome" style={{color:"black",fontSize:15,marginLeft:0,marginRight:0}}/>
              </Button>
 
-            <Button iconLeft  primary transparent  style={{marginLeft:"10%",width:"30%"}} >
+            <Button iconLeft  primary transparent  style={{marginLeft:"10%",width:"30%"}} onPress={()=>this.props.navigation.navigate("RetailersInfoScreen")}>
               <Icon name='heart' type="FontAwesome" style={{color:"red",fontSize:17,marginRight:0}} />
               <Text style={{color:"black",fontSize:11,marginLeft:"0%",}}>Liked first</Text>
             </Button>

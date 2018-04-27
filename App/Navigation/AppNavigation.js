@@ -1,4 +1,6 @@
 import { StackNavigator } from 'react-navigation'
+import SavedOffersScreen from '../Containers/SavedOffersScreen'
+import RetailersInfoScreen from '../Containers/RetailersInfoScreen'
 import RetailersList from '../Containers/RetailersList'
 import CategoryList from '../Containers/CategoryList'
 import SearchOffersScreen from '../Containers/SearchOffersScreen'
@@ -23,6 +25,8 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  SavedOffersScreen: { screen: SavedOffersScreen },
+  RetailersInfoScreen: { screen: RetailersInfoScreen },
   RetailersList: { screen: RetailersList },
   CategoryList: { screen: CategoryList },
   SearchOffersScreen: { screen: SearchOffersScreen },

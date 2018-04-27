@@ -6,12 +6,12 @@ import { connect } from 'react-redux'
 // import AlertMessage from '../Components/AlertMessage'
 
 // Styles
-import styles from './Styles/RetailersListStyle'
-import RESPONSE from "../Containers/RetailersJSON"
+import styles from './Styles/FlyersRenderRowStyle'
+import RESPONSE from "../Components/FlyersJSON"
 import {Icon} from "native-base"
 
 
-class RetailersList extends Component {
+class FlyersRenderRow extends Component {
   state: {
     dataSource: Object
   }
@@ -53,25 +53,18 @@ class RetailersList extends Component {
   renderRow (rowData) {
     return (
       <View style={styles.row} onPress={()=> this.props.navigation.navigate("")}>
-      <View style={styles.LikedView}>
-        <Icon name="heart-o" type="FontAwesome" style={styles.LIKED}/>
-      </View>
-      <Image source={{uri:rowData.image}} style={styles.rowimage}/>
-      <Text style={styles.rowname}>{rowData.name}</Text>
-      <View style={styles.rowlineSeprator}></View>
-      <View style={styles.rowfooter}>
-      <View style={styles.rowfooterLeft}>
-        <Icon name="open-book" type="Entypo" style={styles.Icon}/>
-        <Text style={styles.offersnum}>{rowData.offersnum}</Text>
-        <Text style={styles.offersWord}>Flyers</Text>
-      </View>
-      <View style={styles.rowfooterRight}>
-        <Icon name="barcode" type="FontAwesome" style={styles.Icon}/>
-        <Text style={styles.offersnum}>{rowData.offersnum}</Text>
-        <Text style={styles.offersWord}>Offers</Text>
-      </View>
-     
-      </View>
+        <Image source={{uri:rowData.image}} style={styles.rowimage}/>
+        
+        <View style={styles.rowfooter}>
+          <View style={styles.rowfooterLeft}>
+            <Text style={styles.rowname}>{rowData.name}</Text>
+          </View>
+          <View style={styles.rowfooterRight}>
+            <Icon name="barcode" type="FontAwesome" style={styles.Icon}/>
+            <Text style={styles.offersnum}>{rowData.offersnum}</Text>
+            <Text style={styles.offersWord}>Offers</Text>
+          </View>
+        </View>
     </View>
     )
   }
@@ -127,4 +120,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RetailersList)
+export default connect(mapStateToProps, mapDispatchToProps)(FlyersRenderRow)

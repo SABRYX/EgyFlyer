@@ -5,11 +5,12 @@ export default StyleSheet.create({
   ...ApplicationStyles.screen,
   container: {
     flex: 1,
-    backgroundColor: "#efefef"
+    backgroundColor: "#efefef",
+    marginBottom:"20%"
   },
   row: {
-    width: 190,
-    height: 190,
+    width: "90%",
+    height: 460,
     justifyContent: 'center',
     alignItems: 'center',
     margin: Metrics.baseMargin,
@@ -23,36 +24,20 @@ export default StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap'
   },
-  LikedView:{
-    alignItems:"flex-end",
-    marginLeft:"70%"
-  },
-  NewButton:{
-    backgroundColor:"transparent",
-    flexDirection:"column",
-    height:"50%",
 
-  },
-  LIKED:{
-    fontSize:18,
-    color:"black",
-
-
-  },
   rowimage:{
-    height:"50%",
-    width:"60%",
-    margin:"0%",
+    height:"98%",
+    width:"100%",
+    marginBottom:"0%",
     borderTopLeftRadius:5,
     borderTopRightRadius:5,
 
   },
   rowname:{
-    marginTop:"5%",
+    marginTop:"0%",
     marginBottom:"3%",
-    fontSize:13,
+    fontSize:15,
     color:"black",
-    opacity:0.7
   },
   rowlineSeprator:{
     height:"0.7%",
@@ -74,6 +59,7 @@ export default StyleSheet.create({
     flexDirection:"row",
     width:"100%",
     marginLeft:"5%",
+    justifyContent:"space-between"
 
   },
   offersnum:{

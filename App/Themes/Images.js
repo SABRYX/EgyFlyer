@@ -24,7 +24,8 @@ const images = {
   searchCategories:require("../Images/android/drawable-hdpi/search_categories.png"),
   search_flyer:require("../Images/android/drawable-hdpi/search_flyer.png"),
   search_offer:require("../Images/android/drawable-hdpi/search_offer.png"),
-  search_store:require("../Images/android/drawable-hdpi/search_store.png")
+  search_store:require("../Images/android/drawable-hdpi/search_store.png"),
+  navigation:require("../Images/navigation.png")
 
 }
 
