@@ -7,11 +7,10 @@ export default StyleSheet.create({
     backgroundColor:"#f5f5f5",
     height:"100%",
     width:"100%",
-    flex:1
 
   },
   MainContainer:{
-    height:"25%",
+    height:"30%",
     width:"100%",
     justifyContent:"center",
     alignItems:"center",
@@ -30,7 +29,7 @@ export default StyleSheet.create({
     backgroundColor:"grey",
     width:"50%",
     height:"30%",
-    marginTop:"2%",
+    marginTop:"0%",
     borderRadius:100,
     opacity:0.4
 
@@ -38,7 +37,25 @@ export default StyleSheet.create({
   backgroundLineView:{
     backgroundColor:"white",
     width:"100%",
-    height:"4%",
+    height:"30%",
     alignItems:"center",  
   },
+  ButtonRemove:{
+    flexDirection:"column",
+    backgroundColor:"#ef4c67",
+    flex:1,
+    height:"70%",
+    margin:"2%",
+    borderRadius:10
+  },
+  ButtonPurchased:{
+    flexDirection:"column",
+    backgroundColor:"#878787",
+    flex:1,
+    alignItems:"center",
+    justifyContent:"center",
+    height:"70%",
+    margin:"2%",
+    borderRadius:10
+  }
 })

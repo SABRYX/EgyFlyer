@@ -7,6 +7,7 @@ import { Images } from '../Themes';
 import BackButton from "../Components/BackButton"
 import SearchButton from "../Components/SearchButton"
 import FilterButton from "../Components/FilterButton"
+import SavedOffersButton from "../Components/SavedOffersButton"
 
 export default class HeaderWithbackButton extends Component {
   // // Prop type warnings
@@ -33,9 +34,7 @@ export default class HeaderWithbackButton extends Component {
       <Header style={{height:"100%",elevation:0,backgroundColor: "transparent",width:"100%"}} >
         <Left style={{flex: 1,flexDirection:"row"}}>
           <BackButton/>
-          <Button transparent>
-            <Icon name='shopping-bag'  type="FontAwesome" style={{fontSize : 16}}/>
-          </Button>
+          <SavedOffersButton/>
         </Left>
         <Body style={{flex: 1,alignItems:"center",alignSelf:"center"}}>
           <Title>{this.props.Title}</Title>

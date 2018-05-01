@@ -10,6 +10,7 @@ import Tabs from "../Components/Tabs"
 import FlyersTab from "../Components/FlyersTab"
 import BranchesTab from "../Components/BranchesTab"
 import Branches from "../Components/Branches"
+import SavedOffersButton from "../Components/SavedOffersButton"
 export default class HeaderWithsSarchandBackButton extends Component {
   // // Prop type warnings
   // static propTypes = {
@@ -36,9 +37,7 @@ export default class HeaderWithsSarchandBackButton extends Component {
       <Header style={{height:"9%",elevation:0,backgroundColor: "transparent",width:"100%",marginTop:"25%"}}  hasTabs >
         <Left style={{flex: 1,flexDirection:"row"}}>
           <BackButton/>
-          <Button transparent>
-            <Icon name='shopping-bag'  type="FontAwesome" style={{fontSize : 16}}/>
-          </Button>
+          <SavedOffersButton/>
         </Left>
         <Body style={{flex: 1,alignItems:"center",alignSelf:"center"}}>
           <Title>{this.props.Title}</Title>

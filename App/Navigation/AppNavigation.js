@@ -1,4 +1,5 @@
 import { StackNavigator } from 'react-navigation'
+import InstallmentsScreen from '../Containers/InstallmentsScreen'
 import SavedOffersScreen from '../Containers/SavedOffersScreen'
 import RetailersInfoScreen from '../Containers/RetailersInfoScreen'
 import RetailersList from '../Containers/RetailersList'
@@ -25,6 +26,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  InstallmentsScreen: { screen: InstallmentsScreen },
   SavedOffersScreen: { screen: SavedOffersScreen },
   RetailersInfoScreen: { screen: RetailersInfoScreen },
   RetailersList: { screen: RetailersList },
@@ -49,7 +51,7 @@ const PrimaryNav = StackNavigator({
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'LaunchScreen',
+  initialRouteName: 'MoreScreen',
   navigationOptions: {
     headerStyle: styles.header
   }

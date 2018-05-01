@@ -6,6 +6,7 @@ import {Header,Body,Left,Right,Icon,Button,Title} from "native-base"
 import { Images } from '../Themes'
 import SearchButton from "../Components/SearchButton"
 import FilterButton from "../Components/FilterButton"
+import SavedOffersButton from "../Components/SavedOffersButton"
 
 
 export default class HeaderWithSearch extends Component {
@@ -30,9 +31,7 @@ export default class HeaderWithSearch extends Component {
       >
       <Header style={{height:"100%",elevation:0,backgroundColor: "transparent",width:"100%"}} >
         <Left style={{flex: 1}}>
-          <Button transparent onPress={()=>this.props.navigation.navigate("OfferDetailsScreen",{screen:"OfferDetailsScreen"})}>
-            <Icon name='shopping-basket'  type="MaterialIcons" style={{fontSize : 18}}/>
-          </Button>
+        <SavedOffersButton/>
         </Left>
         <Body style={{flex: 1,alignItems:"center",alignSelf:"center"}} >
           <Title>{this.props.title}</Title>
